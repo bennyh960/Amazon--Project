@@ -5,34 +5,224 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/color.style.css">
     <link rel="stylesheet" href="./styles/font.style.css">
+    <link rel="stylesheet" href="./styles/color.style.css">
+    <link rel="stylesheet" href="/utility.css">
+
     <link rel="stylesheet" media="(min-width:501px)" href="./index.desktop.style.css">
     <link rel="stylesheet" media="(max-width:500px)" href="./index.mobile.style.css">
-    <link rel="stylesheet" media="(min-width:501px)" href="./styles/navbar/desktop.style.css">
-    <link rel="stylesheet" media="(max-width:500px)" href="./styles/navbar/mobile.style.css"> 
+    <link rel="stylesheet" media="(min-width:501px)" href="./styles/navbar/navbar.desktop.style.css">
+    <link rel="stylesheet" media="(max-width:500px)" href="./styles/navbar/navbar.mobile.style.css"> 
+    
+    
     <link href="./assets/favicon.ico" rel="icon" type="image/x-icon" />
     <title>Amazon.com: 38" Wood Guitar With Case and Accessories for Kids/Boys/Girls/Teens/Beginners (38", Sunburst)</title>
-    <link href="/YOUR_PATH/favicon.ico" rel="icon" type="image/x-icon" />
-
     <style>
-        
-        @font-face {
-            font-family: 'amazon';
-            src: url('./assets/fonts/AmazonEmber_Bd.ttf');
-        }
-
+       
         body{
-            font-family: 'amazon';
+            color: #0F1111;;
+            /* background: #fff; */
+            background: #f3f3f3;
+            min-height: 100%;
         }
-    </style>
 
+        .nav-fill{
+            margin-top: 5px ;
+            height: 86%;
+            display: flex;
+            flex: 1 1 auto;
+            border: 2px green solid;
+        }
+        
+        .nav-search {
+            display: flex;
+            /* height: 100%; */
+        }
+
+        form {
+            /* height: 100%; */
+            /* width: 150px; */
+        }
+
+
+        .select-btn{
+            margin-left: 10px;
+            margin-top: 5px;
+            width: 100px;
+            height: 100%;
+        }
+        
+        #dropdown-search{
+            /* border: 2px solid red; */
+            height: 100%;
+            font-family: 'amazon-thin2';
+            color: #0F1111;
+            overflow: hidden;
+            /* min-width: 50px; */
+            width: 80px;
+            /* width: fit-content; */
+            padding: 10px;
+        }
+
+        
+
+        .nav-right{
+            height: 100%;
+            display: flex;
+            flex: 0.8;
+            /* align-items: flex-start; */
+            border: 2px yellow solid;
+            text-align: center;
+            text-align: left;
+            margin-right: 10px;
+            /* position: relative; */
+            /* top: 0; */
+        }
+        
+        .nav-tools {
+            /* margin: 0; */
+            display: flex;
+            justify-content: space-around;
+            flex: 0.8;
+        }
+
+        .container-cart{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            border: solid yellow 1px;
+            /* margin-left: 5px; */
+            /* margin: 3px 0; */
+        }
+
+        .nav-right .nav-sprite {
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* display: inline-block; */
+            /* margin-top: 10px; */
+            /* flex: 1; */
+            /* position: relative; */
+            /* top: -10px; */
+            width: 70px;
+            height: 50px;
+            background-position: -0px -325px;
+        }
+
+        .nav-right .text-double-lines.text-cart{
+            /* display: grid; */
+            /* grid-template-columns: repeat(2,1fr); */
+            /* display: inline; */
+            /* align-items: stretch; */
+            border: 1px solid green;
+            /* padding: 50rem ; */
+            /* margin: 10px; */
+            /* height: 60px;
+            width: 60px; */
+        }
+        /* .nav-right .nav-sprite #cart{
+            text-align: right;
+            grid: 1 /span 2;
+        } */
+
+
+
+
+
+        </style>
 </head>
 <body>
-    hello world
-    Accessories
-    <p style="font-size:24px">Accessories</p>
-    <nav></nav>
+    <nav>
+        <div id="navbar" class="nav-sprite-v1">
+            <div id="nav-belt">
+
+                <div class="nav-left">
+                    <div class="nav-logo">
+                        <div id="nav-logo-sprites">
+                            <a href="#">
+                                <span class="nav-sprite"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="golobal-location">
+                        <a href="#">
+                            <div class="global-icon nav-sprite">
+                                
+                            </div>
+                            <div class="text-double-lines">
+                                <div>
+                                    <div class="line-light gray">Deliver to</div>
+                                    <div class="line-bold">Israel</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-fill">
+                    <div id="nav-search">
+                        <form action="">
+
+                            <div class="select-btn">
+                                <select name="dropdown-search" id="dropdown-search">
+                                   <option value="option1">All</option>
+                                   <option value="option1">All Departments</option>
+                                   <option value="option1">Arts & Craft</option>
+                                   <option value="option1">Automotive</option>
+                                   <option value="option1">Baby</option>
+                                   <option value="option1">Baby</option>
+                                   <option value="option1">Baby</option>
+                                   <option value="option1">Baby</option>
+                                   <option value="option1">Baby</option>
+                                   <option value="option1">Baby</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <div class="nav-tools">
+                        <a href="#" class="choose-country">
+                            <!-- <span class="line-light"></span>
+                            <span class="line-bold"> -->
+                                <span class="flag-icon"></span><br>
+                                <span class="nav-icon">kjkjkj</span>
+                            </span>
+                        </a>
+                        <a href="#" class="nav-text arrow-hover">
+                            <div class="text-double-lines">
+                                <span class="line-light">Hello, Sign in</span><br>
+                                <span class="line-bold">Account & Lists</span>
+                            </div>
+                        </a>
+                        <a href="#" class="nav-text">
+                            <div class="text-double-lines">
+                                <span class="line-light">Returns</span><br>
+                                <span class="line-bold">& Orders</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="container-cart">
+                                <div class="nav-sprite">
+                                    <!-- <div class="text-double-lines"> -->
+                                        <!-- <span><br></span> -->
+                                        <div class="text-double-lines text-cart">
+                                            <span class="line-bold" id="amount-in-cart" style="color: rgb(240,136,4);">0</span><br>
+                                            <span class="line-bold" id="cart">&nbsp;&nbsp;&nbsp;&nbsp;Cart</span>
+                                        </div>
+                                    <!-- </div> -->
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="nav-main" class="nav-sprite"></div> -->
+            <!-- <div id="nav-progressive-subnav"></div> -->
+        </div>
+        
+    </nav>
     <main></main>
     <footer></footer>
     
